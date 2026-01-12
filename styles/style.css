@@ -7,3 +7,96 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/*-----Shared Styles----*/
+
+/* For Flex Dispaly */
+.display_flex{
+    display: flex;
+}
+
+/* Gray Color text */
+.text_gray{
+    color: #424242;
+}
+
+/* Background Light Color */
+.bg_light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* Light Gray Color Text */
+.text_light_gray{
+    color: #727272;
+}
+
+/* Button Primary Design */
+.btn_primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Header Styles */
+
+
+/*-----Navbar Related Styles------*/
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.nav_item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav_link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar ,
+.banner{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* Banner Related Styles */
+.banner_content{
+    max-width:850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner_title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner_description{
+    margin-bottom: 30px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+    .navbar ,
+    .nav_links{
+        flex-direction: column;
+    }
+}
