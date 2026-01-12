@@ -15,6 +15,11 @@
     display: flex;
 }
 
+/* Primary or Highlihgt Colour */
+.text_primary{
+    color: #FF900E;
+}
+
 /* Gray Color text */
 .text_gray{
     color: #424242;
@@ -38,6 +43,20 @@
     font-size: 1.25rem;
     border-radius: 8px;
     border: none;
+}
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main>section{
+    margin-top: 130px;
+}
+
+.section_title{
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 /* Header Styles */
@@ -71,7 +90,11 @@
 }
 
 
-/* Banner Related Styles */
+/*-----Banner Related Styles------*/
+.banner{
+    padding-bottom: 30px;
+}
+
 .banner_content{
     max-width:850px;
     margin: 0 auto;
@@ -92,11 +115,51 @@
     width: 100%;
 }
 
+.teams{
+    align-items: center;
+}
+
+.team_image_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.our_features{
+    margin-left: 70px;
+    max-width: 530px;
+}
+
+
+#quick_list{
+    font-weight: 500;
+}
 
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
     .navbar ,
-    .nav_links{
+    .nav_links,
+    .teams{
         flex-direction: column;
+    }
+
+    .team_image_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our_features{
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+/* Medium Sixe Device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+
+    .our_features{
+        margin:20px auto;
     }
 }
